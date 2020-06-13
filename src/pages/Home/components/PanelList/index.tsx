@@ -12,6 +12,9 @@ const PanelList = ({list}: {list:PokemonResultInterface[]}) => {
             {
                 list.map((pokemon, index) => <Card name={pokemon.name} id={index + 1} url={pokemon.url} key={index}/>)
             }
+            {
+                list.map((pokemon) => console.log(pokemon.url))
+            }
         </section>
     )
 }

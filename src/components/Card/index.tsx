@@ -8,7 +8,7 @@ const Card = ({name, id, url}: {name: string, id:number, url:string}) => {
         <div className={componentClassName}>
             <img src={url} alt={name} title={name}/>
             <h3>{name}</h3>
-            <span>ID: {id}</span>
+            <span>ID: #{id}</span>
         </div>
     )
 }

@@ -9,3 +9,7 @@ export interface PokemonListAPIInterface {
     previous: string,
     results: PokemonResultInterface[]
 }
+
+export interface PokemonSpritesInterface{
+    front_default: string
+}

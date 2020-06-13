@@ -7,6 +7,7 @@ import Pagination from './components/Pagination/index';
 
 
 const Home = () => {
+    const componentClass = 'c-home';
     const [pokemonList, setPokemonList] = useState<PokemonResultInterface[]>([]);
 
     useEffect(() => {
@@ -14,10 +15,10 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
+        <div className={componentClass}>
             <h1>Lista de Pokemons</h1>
             <PanelList list={pokemonList} />
-            <Pagination />
+            <Pagination page={0} />
         </div>
     )
 }
