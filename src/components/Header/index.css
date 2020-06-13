@@ -1,8 +1,8 @@
-c-header{
+.c-header{
     display: flex;
     justify-content: center;
 }
 
-c-header__logo{
-    max-width: 220px;
+.c-header__logo{
+    max-width: 260px;
 }

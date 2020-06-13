@@ -1,0 +1,11 @@
+.c-panel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20x;
+}
+
+@media (max-width:767px){
+    .c-panel{
+        grid-template-columns: 1fr;
+    }
+}
